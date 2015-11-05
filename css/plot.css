@@ -1,0 +1,130 @@
+body{
+  margin: 0 auto;
+  font-family: Helvetica,Arial,'Segoe UI','Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',"游ゴシック体", "Yu Gothic", YuGothic,Meiryo, メイリオ, sans-serif;
+  font-size:13px;
+  line-height:1.6em;
+  background-color: #eee;
+  color:#3f3f3f;
+  -webkit-font-smoothing:antialiased
+}
+#main{
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: -250px;
+  float: left;
+  border-width: 2px;
+}
+#container{
+  margin-right:300px;
+}
+#side{
+  float: left;
+  text-align: left;
+  width: 200px;
+}
+
+#sideupper{
+  margin-bottom:20px;
+}
+#sidebottom{
+  overflow: scroll;
+  height: 300px;
+  text-align: justify;
+  text-justify: distribute-all-lines;
+}
+#current{
+  padding-top:2px;
+  padding-bottom: 2px;
+  width:100%;
+}
+
+div#side div#sidebottom div{
+  font-family: Helvetica,Arial,'Segoe UI','Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',"游ゴシック体", "Yu Gothic", YuGothic,Meiryo, メイリオ, sans-serif;
+  font-size:12px;
+  line-height:1.3em;
+  color:#3f3f3f;
+  -webkit-font-smoothing:antialiased;
+}
+
+#plot{
+	width:100%;
+	overflow: scroll;
+}
+
+#sequence, #mrna{
+  width:100%;
+  word-break: break-all;
+  font-family: FontAwesome,'Segoe UI Mono','Courier New',sans-serif;
+}
+
+.tm{
+  background-color: #cccc66;
+}
+.signal{
+  background-color: #99ccff;
+}
+
+/* リンク */
+a{
+  color:#3f3f3f;
+  text-decoration:none
+}
+
+/* 見出し */
+h4{
+  margin-top: 2px;
+  margin-bottom :2px;
+}
+/* リスト */
+ul{
+  padding:0;
+  margin:0;
+  margin-bottom: 5px;
+}
+li {
+  list-style-type: none;
+  line-height: 13px;
+}
+
+/* 箱のエフェクト */
+.box h3{
+    text-align:center;
+    position:relative;
+    top:80px;
+}
+.box {
+    background:#FFF;
+    margin:20px auto;
+    padding:20px;
+}
+
+.paper{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.paper:before, .paper:after{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.paper:after{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
