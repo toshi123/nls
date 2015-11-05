@@ -93,7 +93,7 @@ function drawPlots(){
     },
 
     "data": [
-      num,
+      num_rna,
       at,
       gc
      ]
