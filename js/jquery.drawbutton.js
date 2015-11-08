@@ -127,7 +127,7 @@ function drawPlots(){
       "height": graphheight,
       "shadows":{"all":['#fff', 0, 0, 100]},
       "colorSet": 
-            ["#DDA0DD","#0068b7","#3CB000","#ffa500"]
+            ["#DDA0DD","#0068b7","#3CB000","#ff0000"]
     },
 
     "data": [
